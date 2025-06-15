@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova - Premium Experience</title>
+    <title>Jun - Resume</title>
     <style>
         * {
             margin: 0;
@@ -16,8 +16,7 @@
         }
 
         body {
-    font-family: 'Poppins', sans-serif;
-
+            font-family: -apple-system, BlinkMacMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #1d1d1f;
             background: #fff;
@@ -113,16 +112,19 @@
             animation: fadeInUp 1s ease 0.4s forwards;
         }
 
+        /* Added new style for hero image */
         .hero-image {
             width: 100%;
-            max-width: 600px;
+            max-width: 300px; /* Adjust max-width as needed for a headshot */
             height: auto;
-            margin: 40px 0;
+            margin: 40px auto; /* Centered with auto margin */
             opacity: 0;
             transform: scale(0.8);
             animation: scaleIn 1s ease 0.6s forwards;
-            border-radius: 20px;
+            border-radius: 50%; /* Make it circular for a headshot */
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            aspect-ratio: 1/1; /* Maintain aspect ratio for circular image */
         }
 
         .cta-button {
@@ -455,201 +457,188 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="nav" id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Nova</a>
+            <a href="#" class="logo">Your Name</a> 
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Recommendations</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Think Different</h1>
-            <p>Experience the next generation of premium design and innovation</p>
-            <div style="width: 100%; height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; margin: 40px 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: 600; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-                Product Hero Image
-            </div>
-            <a href="#features" class="cta-button">Explore Now</a>
+            <h1>[Your Full Name]</h1> 
+            <p>
+                [Your Professional Title], passionate about [Your Field] and building [What you build/do].
+            </p>
+            
+            <img src="path/to/your/headshot.jpg" alt="[Your Name] Headshot" class="hero-image">
+            
+            <a href="#skills" class="cta-button">Explore My Skills</a>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
+    <section class="features" id="about">
         <div class="container">
-            <h2 class="section-title scroll-animate">Designed for Excellence</h2>
-            <p class="section-subtitle scroll-animate">Every detail crafted to perfection</p>
+            <h2 class="section-title scroll-animate">About Me</h2>
+            <p class="section-subtitle scroll-animate">
+                A brief introduction to who you are, your passion, and what drives you.
+                This is a good place to put a short professional summary.
+            </p>
+            </div>
+    </section>
+
+    <section class="features" id="skills" style="padding-top: 0;"> <div class="container">
+            <h2 class="section-title scroll-animate">My Skills</h2>
+            <p class="section-subtitle scroll-animate">Expertise across various technologies and disciplines.</p>
             
             <div class="features-grid">
                 <div class="feature-card scroll-animate">
-                    <div class="feature-icon">⚡</div>
-                    <h3 class="feature-title">Lightning Fast</h3>
-                    <p class="feature-description">Experience unprecedented speed with our cutting-edge technology that delivers instant results.</p>
+                    <div class="feature-icon">💻</div> <h3 class="feature-title">Programming Languages</h3>
+                    <p class="feature-description">Proficient in Python, JavaScript, Java, and C++ for diverse application development.</p>
                 </div>
                 
                 <div class="feature-card scroll-animate">
-                    <div class="feature-icon">🛡️</div>
-                    <h3 class="feature-title">Secure by Design</h3>
-                    <p class="feature-description">Your privacy and security are paramount. Built with enterprise-grade protection from the ground up.</p>
+                    <div class="feature-icon">🛠️</div> <h3 class="feature-title">Tools & Frameworks</h3>
+                    <p class="feature-description">Experienced with React, Node.js, Docker, and Git for efficient workflow and deployment.</p>
                 </div>
                 
                 <div class="feature-card scroll-animate">
-                    <div class="feature-icon">✨</div>
-                    <h3 class="feature-title">Intuitive Interface</h3>
-                    <p class="feature-description">Beautifully simple design that feels natural and effortless to use, no learning curve required.</p>
+                    <div class="feature-icon">💡</div> <h3 class="feature-title">Problem Solving</h3>
+                    <p class="feature-description">A strong analytical mindset, consistently delivering innovative solutions to complex challenges.</p>
                 </div>
                 
                 <div class="feature-card scroll-animate">
-                    <div class="feature-icon">🌍</div>
-                    <h3 class="feature-title">Global Reach</h3>
-                    <p class="feature-description">Connect with millions of users worldwide through our seamless, always-available platform.</p>
+                    <div class="feature-icon">🤝</div> <h3 class="feature-title">Team Collaboration</h3>
+                    <p class="feature-description">A proactive team player, fostering positive environments and contributing to shared goals.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
+    <section class="gallery" id="portfolio">
         <div class="container">
-            <h2 class="section-title scroll-animate">See It in Action</h2>
-            <p class="section-subtitle scroll-animate">Discover the possibilities</p>
+            <h2 class="section-title scroll-animate">My Work Experience & Projects</h2>
+            <p class="section-subtitle scroll-animate">A showcase of my professional journey and key projects.</p>
             
             <div class="gallery-grid">
                 <div class="gallery-item scroll-animate">
-                    <div style="width: 100%; height: 100%; background: linear-gradient(45deg, #ff6b6b, #ee5a24); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 600;">
-                        Premium Design
-                    </div>
+                    <img src="path/to/project1-image.jpg" alt="Project 1 Thumbnail"> 
                     <div class="gallery-overlay">
                         <div class="gallery-text">
-                            <h3>Premium Design</h3>
-                            <p>Crafted with attention to every detail</p>
+                            <h3>[Company Name/Project Title 1]</h3>
+                            <p>[Your Role/Brief Project Description], [Date Range]</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="gallery-item scroll-animate">
-                    <div style="width: 100%; height: 100%; background: linear-gradient(45deg, #4834d4, #686de0); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 600;">
-                        Innovation
-                    </div>
+                    <img src="path/to/project2-image.jpg" alt="Project 2 Thumbnail">
                     <div class="gallery-overlay">
                         <div class="gallery-text">
-                            <h3>Innovation</h3>
-                            <p>Pushing boundaries of what's possible</p>
+                            <h3>[Company Name/Project Title 2]</h3>
+                            <p>[Your Role/Brief Project Description], [Date Range]</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="gallery-item scroll-animate">
-                    <div style="width: 100%; height: 100%; background: linear-gradient(45deg, #00d2d3, #54a0ff); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 600;">
-                        Performance
-                    </div>
+                    <img src="path/to/project3-image.jpg" alt="Project 3 Thumbnail">
                     <div class="gallery-overlay">
                         <div class="gallery-text">
-                            <h3>Performance</h3>
-                            <p>Optimized for speed and efficiency</p>
+                            <h3>[Company Name/Project Title 3]</h3>
+                            <p>[Your Role/Brief Project Description], [Date Range]</p>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="testimonials" id="testimonials">
         <div class="container">
-            <h2 class="section-title scroll-animate">What People Say</h2>
-            <p class="section-subtitle scroll-animate">Trusted by thousands worldwide</p>
+            <h2 class="section-title scroll-animate">Recommendations</h2>
+            <p class="section-subtitle scroll-animate">What colleagues and managers say about my work.</p>
             
             <div class="testimonials-container">
                 <div class="testimonial scroll-animate">
-                    <p class="testimonial-text">"This product completely transformed how we work. The attention to detail and user experience is unmatched."</p>
+                    <p class="testimonial-text">"[Testimonial Quote from Colleague/Manager 1]. [He/She] is an exceptional [Your Role] and a true asset to any team."</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">SM</div>
-                        <div class="author-info">
-                            <h4>Sarah Mitchell</h4>
-                            <p>Design Director</p>
+                        <div class="author-avatar">CM</div> <div class="author-info">
+                            <h4>[Colleague/Manager Name 1]</h4>
+                            <p>[Their Title and Company]</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial scroll-animate">
-                    <p class="testimonial-text">"Incredible performance and beautiful design. It's everything we hoped for and more."</p>
+                    <p class="testimonial-text">"[Testimonial Quote from Colleague/Manager 2]. I highly recommend [Your Name] for [Specific Skill/Trait]."</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">JD</div>
-                        <div class="author-info">
-                            <h4>James Davis</h4>
-                            <p>Tech Lead</p>
+                        <div class="author-avatar">JD</div> <div class="author-info">
+                            <h4>[Colleague/Manager Name 2]</h4>
+                            <p>[Their Title and Company]</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial scroll-animate">
-                    <p class="testimonial-text">"Simply the best solution we've ever used. Intuitive, powerful, and reliable."</p>
+                    <p class="testimonial-text">"Simply one of the most [Positive Adjective] [Your Profession]s I've had the pleasure to work with. [Your Name] consistently delivers quality work."</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">AL</div>
-                        <div class="author-info">
-                            <h4>Alex Liu</h4>
-                            <p>Product Manager</p>
+                        <div class="author-avatar">AL</div> <div class="author-info">
+                            <h4>[Colleague/Manager Name 3]</h4>
+                            <p>[Their Title and Company]</p>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Product</h4>
+                    <h4>Connect</h4>
                     <ul>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Updates</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li><a href="mailto:your.email@example.com">Email Me</a></li>
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/yourprofile" target="_blank">GitHub</a></li>
+                        <li><a href="path/to/your/resume.pdf" target="_blank">Download Resume (PDF)</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Company</h4>
+                    <h4>Explore</h4>
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Recommendations</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Resources</h4>
+                    <h4>Site Info</h4>
                     <ul>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Privacy Policy</a></li> <li><a href="#">Terms of Use</a></li> <li><a href="#">Accessibility</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Security</a></li>
-                        <li><a href="#">Cookies</a></li>
-                    </ul>
+                    <h4>Location</h4>
+                    <p style="color: #86868b; line-height: 1.6;">[Your City, State/Country]<br>Available for remote work.</p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Nova. All rights reserved.</p>
+                <p>&copy; 2025 [Your Name]. All rights reserved.</p>
             </div>
         </div>
     </footer>
